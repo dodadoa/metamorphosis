@@ -1,0 +1,10 @@
+[package]
+name = "metamorphosis"
+version = "0.1.0"
+authors = ["dodadoa <dodadoa@Avas-Genesis.local>"]
+edition = "2018"
+
+[dependencies]
+tokio = { version = "0.2.22", features = ["full"] }
+tikv-client = { git = "https://github.com/tikv/client-rust.git" }
+
