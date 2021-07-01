@@ -1,7 +1,8 @@
 FROM ubuntu:latest
 # Systemwide setup
 RUN apt update
-RUN apt install --yes build-essential protobuf-compiler curl cmake golang
+RUN DEBIAN_FRONTEND="noninteractive" apt-get install --yes build-essential protobuf-compiler curl cmake golang libssl-dev
+
 
 # Create the non-root user.
 RUN useradd builder -m -b /
